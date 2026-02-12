@@ -1,5 +1,14 @@
-function Todo({title})
+import { removeTodo } from "../../actions";
+import { useDispatch } from "react-redux";
+function Todo({title,id})
 {
-    return <li>{title}</li>
+    const dispatch=useDispatch();
+    
+    return(
+            <div>
+                {title}
+                <button onClick={()=>dispatch(removeTodo(id))}>Delete</button>
+            </div>
+    )
 }
 export default Todo;
