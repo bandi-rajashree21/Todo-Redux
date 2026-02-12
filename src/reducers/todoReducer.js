@@ -1,5 +1,10 @@
 import {ADD_TODO,EDIT_TODO,REMOVE_TODO} from '../constants/index';
 
+const initialTodos=[
+    {id:1,title:'Todo 1'},
+    {id:2,title:'Todo 2'}
+]
+
 function todoReducer(todos=[],action)
 {
    if(action.type==ADD_TODO)
