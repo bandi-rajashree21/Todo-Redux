@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import Todo from "../todo/todo";
 import TodoInput from "../TodoInput/TodoInput";
 function todoList() {
-  const todoList = useSelector((state) => state.todos);  //get property from state
+  const todoList = useSelector((state) =>{ return state.todos.value});  //get property from state
   return (
     <>
       <TodoInput></TodoInput>

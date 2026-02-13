@@ -1,6 +1,6 @@
 import {ADD_TODO,EDIT_TODO,REMOVE_TODO} from '../constants/index';
 
-function todoReducer(todos=[],action)
+function todoReducer(todos=[],action)  //passing state and action to reducer
 {
    if(action.type==ADD_TODO)
    {
